@@ -305,7 +305,7 @@ background: #e84a69;
   opacity: 0;
   overflow-x: hidden;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s;
   
 }
 
@@ -654,7 +654,7 @@ body {
   width: 50%;
   text-align: center;
   top:-27%;
-  left:-50%;
+  left:0%;
 }
 
 .container {
@@ -709,10 +709,10 @@ body {
 
 
 /* zoom */
-.object {
+/* .object {
 animation: zoom-in-zoom-out 3s ease-out;
 
-}
+} */
 
 @keyframes zoom-in-zoom-out {
   0% {
@@ -883,11 +883,14 @@ animation: zoom-in-zoom-out 3s ease-out;
 .community-section {
   float: left;
   width: 100%;
-  position: relative;
+  position: absolute;
+  height: 100vh;
+  top:0;
+  left: 0;
 }
 
 .hero-bkg-animated {
-  background: white url(images/svg/bg-shop.svg) repeat;
+  background: white url(images/svg/bg-shop.svg) no-repeat;
   width: 100vw;
   margin: 0;
   text-align: center;
@@ -896,7 +899,7 @@ animation: zoom-in-zoom-out 3s ease-out;
   box-sizing: border-box;
   filter: grayscale(100%);
   opacity: 0.3;
-  animation: slide 80000s linear infinite;
+  /* animation: slide 80000s linear infinite; */
 }
 
 @keyframes slide {

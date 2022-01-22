@@ -5,7 +5,7 @@ $(".slider").slick({
   arrows: false,
   dots: false,
   autoplay: false,
-  speed: 800,
+  speed: 1200,
   slidesToShow: 1,
   slidesToScroll: 1
 });
@@ -25,7 +25,7 @@ $('.progressBarContainer .progressBar').each(function (index) {
 function startProgressbar() {
   resetProgressbar();
   percentTime = 0;
-  tick = setInterval(interval, 100);
+  tick = setInterval(interval, 20);
 }
 
 function interval() {
@@ -67,3 +67,15 @@ $('.item').click(function () {
   startProgressbar();
 });
 //# sourceURL=pen.js
+
+document.addEventListener("mousemove", parallax);
+function parallax(e) {
+  document.querySelectorAll(".object").forEach(function (move) {
+
+    var moving_value = move.getAttribute("data-value");
+    var x = (e.clientX * moving_value) / 150;
+    var y = (e.clientY * moving_value) / 150;
+    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+
+  });
+}
