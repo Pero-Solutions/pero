@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <link rel="apple-touch-icon" type="image/png" href="images/favicon.png" />
+  <meta name="apple-mobile-web-app-title" content="Pero">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link rel="mask-icon" type="image/x-icon" href="images/favicon.png" color="#111" />
+  <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+  <title>Technologies Pero</title>
+  <link rel='stylesheet' href='css/lity.min.css'>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+  <link rel="stylesheet" href="css/aqua.min.css">
+  <link rel='stylesheet' href='css/demo-styles.css'>
+  
+  <link rel="stylesheet" type="text/css" href="css/style-sub.css">
+    <style>
+
+    </style>
+    
+
+  </head>
+  <body style="background-image: url(images/bg.svg) cover;">  
+    <div id="header-sroll"></div>
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+    <div class="menu">
+      <img class="logo_w " src="images/svg/logo-w.svg" alt="Pero">
+  
+      <div class="menu-inner">
+  
+        <ul class="menu-nav">
+          <li class="menu-nav-item"><a class="menu-nav-link " href="index.html"><span>
+                <div>Products</div>
+              </span></a></li>
+          <li class="menu-nav-item"><a class="menu-nav-link" href="about.html"><span>
+                <div>About</div>
+              </span></a></li>
+          <li class="menu-nav-item active"><a class="menu-nav-link" href="tech.html"><span>
+                <div>Technologies</div>
+              </span></a></li>
+          <li class="menu-nav-item"><a class="menu-nav-link" href="contact.html"><span>
+                <div>Contact</div>
+              </span></a></li>
+        </ul>
+        <div class="gallery">
+          <div class="title">
+            <p>Our Packages</p>
+          </div>
+          <div class="images">
+            <a class="image-link" href="#">
+              <div class="image" data-label="Packages"><img src="" alt=""></div>
+            </a>
+            <a class="image-link" href="#">
+              <div class="image" data-label="Packages"><img src="" alt=""></div>
+            </a>
+            <a class="image-link" href="#">
+              <div class="image" data-label="Packages"><img src="" alt=""></div>
+            </a>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="logo">
+      <img src="images/svg/logo.svg" alt="Pero">
+    </div>
+    <h1 class="top_heading">The Product and the Service      
+    </h1>
+    <h1 class="top_heading head_txt">“By using cutting edge technology, we radically and lastingly change the way you think retail and securing life standards for the consumers of next generation.”
+    </h1>
+
+<div class="main">
+
+</div>
+<a class="arrow-wrap" href="#content">
+  <span class="arrow"></span>
+  <!--<span class="hint">scroll</span>-->
+  </a>
+<div class="boxWrapper">
+  
+  <div class="box box01">1
+    <img src="images/picture-1.png"  alt=""/>
+  </div>
+  <div class="box box02">2
+    <img src="images/picture-1.png"  alt=""/>
+  </div>
+  <div class="box box03">3
+    <img src="images/picture-1.png"  alt=""/>
+  </div>
+  <div class="box box04">4
+<!-- 
+    <div>
+      <h3>
+        sdfjygkuhljlklhgfgdfsdghjkkh
+      </h3>
+    </div> -->
+   
+    <img src="images/picture-1.png" alt=""/>
+  </div>
+  <div class="box box05">5
+   
+    <img src="images/picture-1.png"  alt=""/>
+  </div>
+</div>  
+
+<div class="sect bg-static">
+  <div class="bg-move" style=" background-image: url(./images/svg/bike-d.svg);"></div>
+    <span>PERO is an intelligent and patented system that, mounted on suitable packaging, makes circular use of transport packaging possible 
+    </span>
+  </div>
+
+  <div id="content"  class="sect">
+    <span>The PERO product contains an e-Ink label solution with relevant transport information, Cloud solution, Bluetooth 5.0 technology and Low battery consumption. Can be powered by coins cell batteries.
+    </span>
+  </div>  
+  <div class="sect">
+    <span>The PERO product continuous logs Time, Temperature, Humidity, G-influence and Rotation on the packaging in semi real/real time
+    </span>
+  </div>
+  <div class="sect bg-static">
+    <div class="bg-move" style=" background-image: url(./images/svg/truck.svg);"></div>
+    <span>An intelligent software backbone supports packaging handling from webshop to end user delivery and returning of the packaging incl. return labels. Eventually the PERO packaging can be re-programmed to new receiver.
+    </span>
+  </div>
+  
+  <div class="sect">
+    <span>PERO is designed to circulate all kind of packaging, allowing the same packaging to be resused up to 1,000 times.</span>
+  </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+        <script id="rendered-js" >
+  $(window).on("load resize scroll", function () {
+    $(".bg-static").each(function () {
+      var windowTop = $(window).scrollTop();
+      var elementTop = $(this).offset().top;
+      var leftPosition = windowTop - elementTop;
+      $(this).
+      find(".bg-move").
+      css({ left: leftPosition });
+    });
+  });
+  
+    //# sourceURL=pen.js
+
+    $(window).scroll(function () {
+    var sc = $(window).scrollTop()
+    if (sc > 100) {
+      $("#header-sroll").addClass("small");
+            $(".logo").addClass("top-zero");
+          } else {
+            $("#header-sroll").removeClass("small");
+            $(".logo").removeClass("top-zero");
+          }
+});
+
+ //this is where we apply opacity to the arrow
+ $(window).scroll(function () {
+        
+        //get scroll position
+        var topWindow = $(window).scrollTop();
+        //multipl by 1.5 so the arrow will become transparent half-way up the page
+        var topWindow = topWindow * 1.5;
+      
+        //get height of window
+        var windowHeight = $(window).height();
+      
+        //set position as percentage of how far the user has scrolled 
+        var position = topWindow / windowHeight;
+        //invert the percentage
+        position = 1 - position;
+      
+        //define arrow opacity as based on how far up the page the user has scrolled
+        //no scrolling = 1, half-way up the page = 0
+        $('.arrow-wrap').css('opacity', position);
+      
+      });
+      
+      </script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
+
+<script id="rendered-js" >
+    console.clear();
+
+TweenMax.set(".box", { yPercent: -50, autoAlpha: 1 });
+TweenLite.defaultEase = Sine.easeInOut;
+
+var time = 0.5,
+  scale01 = 1.2,
+  scale02 = 1.4,
+  scale03 = 1.6,
+  scale04 = 1.8,
+  w = $(document).width(),
+  box = $(".box").width(),
+  margin = (w - 80 - box * 0.1) / 4,
+  x01 = margin * 2,
+  x02 = margin * 3,
+  x03 = margin * 4,
+  x04 = margin * 5;
+var boxes = new TimelineMax({ paused: true })
+  .to(".box05", 1, { x: x01, scale: scale01, transformOrigin: "center" })
+
+  .addLabel("second", "+=0")
+  .to(
+    ".box05",
+    time,
+    { x: x02, scale: scale02, transformOrigin: "center" },
+    "second"
+  )
+  .to(
+    ".box04",
+    time,
+    { x: x01, scale: scale01, transformOrigin: "center" },
+    "second"
+  )
+
+  .addLabel("third", "+=0")
+  .to(
+    ".box05",
+    time,
+    { x: x03, scale: scale03, transformOrigin: "center" },
+    "third"
+  )
+  .to(
+    ".box04",
+    time,
+    { x: x02, scale: scale02, transformOrigin: "center" },
+    "third"
+  )
+  .to(
+    ".box03",
+    time,
+    { x: x01, scale: scale01, transformOrigin: "center" },
+    "third"
+  )
+
+  .addLabel("fourth", "+=0")
+  .to(
+    ".box05",
+    time,
+    { x: x04, scale: scale04, transformOrigin: "center" },
+    "fourth"
+  )
+  .to(
+    ".box04",
+    time,
+    { x: x03, scale: scale03, transformOrigin: "center" },
+    "fourth"
+  )
+  .to(
+    ".box03",
+    time,
+    { x: x02, scale: scale02, transformOrigin: "center" },
+    "fourth"
+  )
+  .to(
+    ".box02",
+    time,
+    { x: x01, scale: scale01, transformOrigin: "center" },
+    "fourth"
+  );
+
+// === scrolling sync =========================
+var lastScrollTop = 0;
+
+$(window).scroll(function (e) {
+  var scrollNum = $(window).scrollTop();
+  scrollPercent =
+    $(window).scrollTop() / ($(document).height() - $(window).height());
+
+  var progressBlobs = scrollPercent * 1;
+
+  if (scrollNum > lastScrollTop) {
+    TweenLite.to(boxes, 1, { progress: progressBlobs, ease: Sine.easeOut });
+  } else {
+    //upscroll
+    TweenLite.to(boxes, 1, { progress: progressBlobs, ease: Sine.easeOut });
+  }
+
+  lastScrollTop = scrollNum;
+});
+
+
+</script>
+ 
+  </body>
+  </html>
