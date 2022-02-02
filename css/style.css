@@ -1077,7 +1077,11 @@ animation: zoom-in-zoom-out 3s ease-out;
 }
 
 }
-
+@media screen and (max-height: 720px) {
+  .b_r {
+    top: 60%;
+  }
+}
 /* video */
 
 .wrapper {
